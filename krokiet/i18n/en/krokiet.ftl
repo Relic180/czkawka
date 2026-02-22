@@ -99,7 +99,7 @@ rust_extracted_exif_tags = Extracted EXIF tags from { $items_stats } files ({ $s
 rust_delete_confirmation = Are you sure you want to delete the selected items?
 rust_delete_confirmation_number_simple = { $items } items selected.
 rust_delete_confirmation_number_groups = { $items } items selected in { $groups } groups.
-rust_delete_confirmation_selected_all_in_group = All items selected in { $groups } groups.
+rust_delete_confirmation_selected_leave_one_in_group = All items selected in { $groups } groups.
 
 rust_move_confirmation = Are you sure you want to move the selected items?
 rust_move_confirmation_number_simple = { $items } items selected.
@@ -156,6 +156,7 @@ column_codec = Codec
 column_duration = Duration
 column_exif_tags = EXIF Tags
 column_new_name = New Name
+column_full_path = Full Path
 
 # Slint translations
 ok_button = Ok
@@ -209,6 +210,7 @@ selection_newest = Select newest
 selection_oldest = Select oldest
 selection_shortest_path = Select the shortest path
 selection_longest_path = Select the longest path
+selection_custom_select_unselect = Custom Select/Unselect
 stage_current = Current Stage:
 stage_all = All Stages:
 subsettings = Subsettings
@@ -380,3 +382,14 @@ hardlink_confirmation_text = Are you sure you want to create hardlinks for the s
 softlink_button_text = Softlink
 softlink_text = Create softlinks
 softlink_confirmation_text = Are you sure you want to create softlinks (symlinks) for the selected items?
+popup_custom_select_title_text = Custom Select / Unselect
+popup_custom_select_button_text = Select
+popup_custom_unselect_button_text = Unselect
+popup_custom_column_name_header_text = Column
+popup_custom_filter_value_header_text = Filter value (wildcard / regex)
+popup_custom_case_sensitive_text = Case sensitive
+popup_custom_leave_one_in_group_text = Select all items except one, in each group
+popup_custom_hint_str_text = Text columns: wildcards  *name*  /home/*  *.rs
+popup_custom_hint_int_text = Size [KB] / numeric columns: >= 2048  < 512  = 0  (operators: >=  <=  >  <  =)
+popup_custom_hint_date_text = Date columns: DD-MM-YYYY or YYYY-MM-DD, optional time HH:MM:SS  e.g.  >= 2020-01-01  or  < 31-12-2022 23:59:59
+

@@ -14,6 +14,7 @@ import { PopupNewDirectories } from "popup_new_directories.slint";
 import { PopupDelete } from "popup_delete.slint";
 import { PopupMoveFolders } from "popup_move_folders.slint";
 import { PopupSelectResults } from "popup_select_results.slint";
+import { PopupCustomSelect } from "popup_custom_select.slint";
 import { PopupRenameBadExtensions } from "popup_rename_bad_extensions.slint";
 import { PopupRenameBadFileNames } from "popup_rename_bad_file_names.slint";
 import { PopupSave } from "popup_save.slint";
@@ -237,6 +238,16 @@ export component MainWindow inherits Window {
         y: parent.y + y_offset - self.all_items_height - 5px;
         height: root.height;
         width: root.width;
+        open_custom_select_popup(is_select) => {
+            custom_select_popup_window.show_popup();
+        }
+    }
+
+    custom_select_popup_window := PopupCustomSelect {
+        height: root.height;
+        width: root.width;
+        x: parent.x + (root.width - self.popup_width) / 2.0;
+        y: parent.y + (parent.height - self.popup_height) / 2.0;
     }
 
     delete_popup_window := PopupDelete {

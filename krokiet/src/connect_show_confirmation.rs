@@ -35,7 +35,10 @@ pub(crate) fn connect_show_confirmation(app: &MainWindow, shared_models: Arc<Mut
                         base.push_str(
                             format!(
                                 "\n{}",
-                                flk!("rust_delete_confirmation_selected_all_in_group", groups = group_res.number_of_groups_with_all_items_checked)
+                                flk!(
+                                    "rust_delete_confirmation_selected_leave_one_in_group",
+                                    groups = group_res.number_of_groups_with_all_items_checked
+                                )
                             )
                             .as_str(),
                         );
