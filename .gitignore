@@ -34,3 +34,9 @@ charts*
 *__pycache__*/
 result
 .direnv
+
+# >>> ForgeCrew (managed - do not edit) >>>
+# ForgeCrew runtime state (untracked)
+forgecrew/.state/
+.codex/
+# <<< ForgeCrew <<<
